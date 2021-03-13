@@ -42,7 +42,7 @@ jobs:
       - run: ls -a /tmp/workspace
       - run:
           name: Create Docker image and push to Docker hub
-          command: docker login -u $DOCKER_LOGIN --password $DOCKER_PWD && docker build -t ruslyc85/ticketingApp /tmp/workspace/ && docker push ruslyc85/ticketingApp
+          command: docker login -u $DOCKER_LOGIN --password $DOCKER_PWD && docker build -t ruslyc85/ticketing-app /tmp/workspace/ && docker push ruslyc85/ticketing-app
   deploy-job:
     docker:
       #specify the version you desire here
